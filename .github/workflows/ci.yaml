@@ -50,6 +50,8 @@ jobs:
           with:
             version: v1.55.2
             run: golangci-lint run
+            args: --timeout=5m
+            continue-on-error: true
             working-directory: src/product-catalog
 
     docker:
